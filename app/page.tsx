@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { NavigationContainer} from '@react-navigation/native';
 
 export default function Home() {
   return (
