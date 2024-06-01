@@ -18,6 +18,9 @@ const HomeScreen =()=>{
             {/*Add UI components for deposit tracking */}
             <TextInput placeholder="Enter deposit amount" keyboardType="numeric" value={depositAmount.toString()}
             onChangeText={(text)=>setDepositAmount(parseFloat(text))} />
+            <Button title="Make Deposit" onPress={handleDeposit}/>
+            {/*Add more UI components for other features */}
         </View>
-    )
-}
+    );
+};
+export default HomeScreen;
