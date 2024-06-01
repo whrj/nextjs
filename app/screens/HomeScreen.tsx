@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, TextInput, Button} from 'react-native';
+import { text } from 'stream/consumers';
 
 const HomeScreen =()=>{
 
@@ -14,7 +15,9 @@ const HomeScreen =()=>{
     return(
         <View>
             <Text>Week Deposit Tracker</Text>
-            
+            {/*Add UI components for deposit tracking */}
+            <TextInput placeholder="Enter deposit amount" keyboardType="numeric" value={depositAmount.toString()}
+            onChangeText={(text)=>setDepositAmount(parseFloat(text))} />
         </View>
     )
 }
