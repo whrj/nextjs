@@ -1,4 +1,10 @@
 import Image from "next/image";
+import React from 'react';
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+
+
 
 export default function Home() {
   return (
